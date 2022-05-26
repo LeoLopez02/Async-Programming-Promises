@@ -19,13 +19,13 @@
             <button class="bg-blue mr2" onclick="xhr()">XHR</button>
             <button class="bg-blue mr2" onclick="allPromises()">All</button>
             <button class="bg-blue mr2" onclick="allSettled()">All Settled</button>
-            <button class="bg-blue mr2" onclick="race()">Race</button>
+            <button class="bg-blue mr2" onclick="races()">Race</button>
         </div>
         <div class="results w-50 ml4 mt4 pa4">
             <h1>Results</h1>
         </div>
         <script type="module">
-            import { timeout, interval, clearIntervalChain, xhr, allPromises, allSettled, race } from "./src/creating.mjs";
+            import { timeout, interval, clearIntervalChain, xhr, allPromises, allSettled, races } from "./src/creating.mjs";
 
             window.timeout = timeout;
             window.interval = interval;
@@ -33,7 +33,7 @@
             window.xhr = xhr;
             window.allPromises = allPromises;
             window.allSettled = allSettled;
-            window.race = race;
+            window.races = races;
         </script>
     </body>
 </html>
